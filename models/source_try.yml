@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: test_prod
+    database: MY_DB
+    schema: PROD
+    tables:
+      - name: EMPLOYEE
+      

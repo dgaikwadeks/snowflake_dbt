@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 WITH CTE AS(
 SELECT DEPT_ID,SUM(SALARY) FROM PROD."EMPLOYEE" GROUP BY 1)
 SELECT * FROM CTE
